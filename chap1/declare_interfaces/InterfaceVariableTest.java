@@ -1,0 +1,1 @@
+public interface InterfaceVariableTest{	//Test if variable can have no value assigned with no public, static and final modifier	//Result compile error	String TEST;		//Valid, implicitly public static and final	String Test = null;}
