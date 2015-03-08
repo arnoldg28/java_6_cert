@@ -1,1 +1,0 @@
-package myinterface;public interface MyInterface{	void bounce();	void setBounceFactor(int bf);}

@@ -1,1 +1,0 @@
-package implementor;import myinterface.*;public class MyImplementor implements MyInterface{	public void bounce(){}	public void setBounceFactor(int bf){}}
