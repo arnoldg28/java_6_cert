@@ -1,6 +1,6 @@
 class Animal {
  Animal (String name){ }
- Animal() {}
+ //Animal() {}
 }
 
 class Horse extends Animal {
