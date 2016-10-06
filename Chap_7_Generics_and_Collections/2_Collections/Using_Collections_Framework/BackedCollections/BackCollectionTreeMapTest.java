@@ -15,12 +15,12 @@ public class BackCollectionTreeMapTest{
 		submap.put("f", "fish");													// #4 add to copy
 		
 		map.put("r", "raccoon");													// #5 add to original - out of range for the submap
-		//submap.put("p", "pig");													// #6 add to copy - out of range for the submap. Runtime exeption cannot add directly to submap if out of range
+		//submap.put("p", "pig");												// #6 add to copy - out of range for the submap. Runtime exeption cannot add directly to submap if out of range
 				
 		System.out.println(map + " " + submap);						// #7 show final contents
 				
 		map.put("z", "zebra");													// #mine Add to original, out of range of original?
 		System.out.println("my test: " + map + " " + submap);	// #2 show final contents
-
+		
 	}
 }
