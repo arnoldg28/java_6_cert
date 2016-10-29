@@ -6,8 +6,8 @@ public class HashSetAndTreeSet{
 	
 		boolean[] ba = new boolean[5];
 		
-		//Set s = new HashSet(); // This will have unpredictable order of objects
-		Set s = new TreeSet(); // This will throw an exception since objects that was inserted are NOT mutually comparable
+		Set s = new HashSet(); // This will have unpredictable order of objects
+		//Set s = new TreeSet(); // This will throw an exception since objects that was inserted are NOT mutually comparable
 		
 		ba[0] = s.add("a");
 		ba[1] = s.add(new Integer(42));
