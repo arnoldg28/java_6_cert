@@ -3,8 +3,16 @@ import java.util.*;
 
 public class TheDateFormatClass{
 
-	public static final void main(String[] args){
+	public static final void main(String[] args) throws Exception{
+		System.out.println("*** Different Format Sample ***");
+		differentFormatSamples();
+		
+		System.out.println("*** The Parse Method Sample ***");
+		theParseMethod();
+	}
 	
+	private static void differentFormatSamples(){
+		
 		Date d1 = new Date(1000000000000L);
 		
 		System.out.println(d1.toString());
@@ -20,6 +28,23 @@ public class TheDateFormatClass{
 
 		for(DateFormat df:dfa)
 			System.out.println(df.format(d1));
-		}
+		
+	}
+	
+	private static void theParseMethod()throws ParseException{
+		
+		Date d1 = new Date(1000000000000L);
+		System.out.println("d1 " + d1.toString());
+		
+		DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT);
+		
+		String s = df.format(d1);
+		
+		System.out.println(s);
+		
+		Date d2 = df.parse(s);
+		System.out.println("parsed = " + d2.toString());
+		
+	}
 
 }
